@@ -15,25 +15,27 @@
     <!-- Font Awesome -->
     <script src="https://kit.fontawesome.com/edce5e042a.js" crossorigin="anonymous"></script>
     <!-- CSS -->
-    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="./assets/css/index.css">
+    <link rel="stylesheet" href="./sass/index.css">
 </head>
 
 <body>
     <header class="header">
-        <div class="header__logo"></div>
-        <div class="header__location">
-            <span class="header__icon"></span>
+        <a href="#index.html" class="header__icon-back--home fa fa-arrow-left no-link-style"></a>
+        <h1 class="header__logo">ohmyfood</h1>
+        <div class="header header__location">
+            <span class="header__icon fa-solid fa-location-dot"></span>
             <p class="header__text">Paris, Belleville</p>
         </div>
     </header>
     <main class="main">
-        <section class="section">
-            <h1 class="section__title"></h1>
-            <p class="section__text"></p>
-            <a href="" class="section__link"></a>
+        <section class="hero"> <!-- bandeau de presentation -->
+            <h1 class="hero__title">Réservez le menu qui vous convient</h1>
+            <p class="hero__paragraph">Découvrez des restaurants d’exception, sélectionnés par nos soins.</p>
+            <span href="" class="hero__btn">Explorer nos restaurants</span>
         </section>
         <section class="section--fonctionnement">
-            <h2 class="section__title">Fonctionnement</h2>
+            <h1 class="section__title">Fonctionnement</h1>
             <ul class="section__list">
                 <li class="section__item">
                     <span class="section__icon--step">1</span>

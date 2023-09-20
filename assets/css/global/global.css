@@ -5,7 +5,20 @@
 }
 
 :root {
+    --white: #fff;
+    --grey: #353535;
+    --grey-2: #eaeaea;
+    --grey-3: #f6f6f6;
+
     --color-primary: #9356dc;
     --color-secondary: #ff79da;
     --color-tertiary: #99e2d0;
+
+    --button-gradient: linear-gradient(193deg, var(--color-primary) -11.44%, var(--color-secondary) 123.93%);
 }
+
+/* utility classes */
+.no-link-style {
+    color: inherit;
+    text-decoration: none;
+  }

@@ -1,0 +1,53 @@
+/******* font-family *******/
+* {
+  font-family: "Roboto";
+}
+:root {
+  --font-family__logo-titre: "Shrikhand";
+  --font-family__text: "Roboto";
+}
+/**** font setting ******/
+.header__logo {
+    font-family: "Shrikhand";
+    font-size: 30px;
+    font-weight: 400;
+    font-style: italic;
+}
+.header__text,
+.hero__btn,
+.section__text,
+.footer__text {
+  font-size: 16px;
+  font-weight: 500;
+}
+.hero__title {
+  font-size: 24px;
+  font-weight: 700;
+}
+.hero__paragraph {
+  font-size: 18px;
+  font-weight: 300;
+}
+.section__title {
+  font-size: 24px;
+  font-weight: 700;
+}
+.card__title {
+  font-size: 18px;
+  font-weight: 700;
+}
+.card__text {
+  font-size: 17px;
+  font-weight: 300;
+}
+.footer__logo {
+  font-family: "Shrikhand";
+  font-size: 18px;
+  font-weight: 400;
+  font-style: italic;
+}
+
+@media (max-width: 1024px) {
+}
+@media (max-width: 767px) {
+}
