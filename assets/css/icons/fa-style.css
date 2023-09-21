@@ -1,3 +1,14 @@
+.fa-solid {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
 .fa-location-dot { 
     color : var(--grey); 
+}
+.fa-mobile-screen-button {
+  position: relative;
+  top: -1px;
+  font-size: 16px;
+    transform: scale(1.085,1.25);
 }
