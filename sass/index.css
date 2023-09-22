@@ -36,6 +36,55 @@
   color: var(--grey);
 }
 
+.footer {
+  padding: 25px;
+}
+.footer__logo {
+  height: 27px;
+  margin-bottom: 16px;
+}
+.footer__list {
+  display: flex;
+  flex-direction: column;
+  width: -moz-fit-content;
+  width: fit-content;
+  gap: 7px;
+  list-style: none;
+}
+.footer__link {
+  display: flex;
+}
+.footer__icon--utensils {
+  margin-right: 11px;
+  font-size: 13px;
+}
+.footer__icon--handshake {
+  transform: rotate(-25deg) scale(0.6) translateX(-2px);
+}
+.footer__text {
+  display: flex;
+  align-items: center;
+}
+.footer__text::before {
+  font-family: "Font Awesome 6 Free";
+  font-weight: 900;
+  font-size: 13px;
+  width: 22px;
+}
+.footer__text--icon-utensils::before {
+  content: "\f2e7";
+}
+.footer__text--icon-handshake::before {
+  content: "\f2b5";
+  justify-content: left;
+}
+.footer__text--icon-utensils::before {
+  transform: translateY(-0.75px);
+}
+.footer__text--icon-handshake::before {
+  transform: rotate(-35deg) scale(0.9) translateX(-1px) translateY(-1px);
+}
+
 .hero {
   display: flex;
   flex-direction: column;
@@ -158,7 +207,6 @@
   position: relative;
   border-radius: 15px;
   background-color: white;
-  position: relative;
   z-index: 0;
 }
 .card__container {
