@@ -1,0 +1,40 @@
+.step-card {
+    display: flex;
+    flex: 1;
+    align-items: center;
+    align-self: stretch;
+    border-radius: 25px;
+    background-color: var(--grey-3);
+    box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.15);
+    margin-left: 12px;
+    &__icon {
+        &--mobile {
+            margin-left: 33.5px;
+            transform: translateY(-5px) scale(1.085, 1.25);
+        }
+        &--list {
+            margin-left: 34.5px;
+            transform: translateY(-4px);
+        }
+        &--store {
+            margin-left: 35.5px;
+            transform: translateY(-3px) scale(1, 1.125);
+        }
+    }
+    
+
+    &__text {
+        position: absolute;
+        left: 106px;
+        height: 15.67px;
+        &--mobile {
+            transform: translateY(-2px);
+        }
+        &--list {
+            transform: translateY(-4px);
+        }
+        &--store {
+            transform: translateY(-1px);
+        }
+    }
+}
