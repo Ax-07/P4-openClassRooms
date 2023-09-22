@@ -38,6 +38,8 @@
 
 .footer {
   padding: 25px;
+  background-color: var(--grey);
+  color: white;
 }
 .footer__logo {
   height: 27px;
