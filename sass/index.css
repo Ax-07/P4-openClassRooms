@@ -1,3 +1,4 @@
+@charset "UTF-8";
 .header {
   display: flex;
   flex-wrap: wrap;
@@ -246,10 +247,30 @@
 .card__title {
   margin-bottom: 5px;
 }
-.card__icon--like {
+.card__btn {
+  display: none;
+}
+.card__btn-like {
   position: absolute;
   z-index: 20;
-  font-size: 22px;
+  border: none;
+  background: none;
   bottom: 33px;
   right: 25px;
+}
+.card__btn-icon::before {
+  font-family: "Font Awesome 6 Free";
+  content: "\f004"; /* Code Unicode pour l'icône du cœur */
+  font-size: 22px;
+  font-weight: 400;
+  display: block;
+  width: 22px;
+  height: 22px;
+}
+.card__btn:checked + .card__btn-like .card__btn-icon::before {
+  font-weight: 900;
+  background: linear-gradient(180deg, var(--color-primary) 0%, var(--color-secondary) 100%);
+  color: transparent; /* Rendre le contenu de l'icône transparent */
+  -webkit-background-clip: text; /* Pour le remplissage de dégradé */
+  background-clip: text; /* Pour le remplissage de dégradé */
 }/*# sourceMappingURL=index.css.map */
