@@ -84,7 +84,6 @@
   flex: 1;
   align-items: center;
   list-style: none;
-  align-self: stretch;
 }
 .fonctionnement__item::before {
   content: counter(steps);
@@ -111,6 +110,9 @@
   box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.15);
   margin-left: 12px;
 }
+.step-card__icon {
+  color: var(--grey-4);
+}
 .step-card__icon--mobile {
   margin-left: 33.5px;
   transform: translateY(-5px) scale(1.085, 1.25);
@@ -122,6 +124,7 @@
 .step-card__icon--store {
   margin-left: 35.5px;
   transform: translateY(-3px) scale(1, 1.125);
+  color: var(--color-primary);
 }
 .step-card__text {
   position: absolute;
