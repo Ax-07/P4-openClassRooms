@@ -1,0 +1,88 @@
+@mixin fadeIn {
+    animation: fadeIn $transitionTime forwards cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+@mixin fadeOut {
+    animation: fadeOut $transitionTime forwards cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+$transitionTime: 3s;
+
+.page {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    width: 100%;
+    background-color: white;
+    opacity: 0;
+    transition: height, opacity $transitionTime;
+    z-index: 0;
+
+    &__home {
+        @include fadeIn; 
+    }
+    &__menu {
+
+        &:target {
+            > .main {
+                height: 1444px;
+            }
+             > .header {
+                height: 96px;
+                background-color: white;
+            }
+            @include fadeIn;
+
+            + .page__home {
+                @include fadeOut;
+            }
+           ~ .page__home > .header > .search-form {
+                height: 0px;
+                // transition: height 3.5s;
+            }
+        }
+
+
+        &:not(:target) {
+            @include fadeOut;
+            
+        }
+    }
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        z-index: 0;
+    }
+
+    100% {
+        opacity: 1;
+        z-index: 1;
+    }
+}
+
+
+@keyframes fadeOut {
+    0% {
+        opacity: 1;
+        z-index: 1;
+    }
+
+    100% {
+        opacity: 0;
+        z-index: 0;
+    }
+}
+// @media screen and (min-width: 1024px) {
+//     .page {
+//         &__home {
+//             height: 1395px;
+//         }
+    
+//         &__menu {
+//             height: 1590px;
+//         }
+//     }
+    
+// }

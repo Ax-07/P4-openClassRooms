@@ -1,0 +1,23 @@
+.banner {
+
+
+    &__img {
+        width: 100%;
+        height: 275px;
+        object-fit: cover;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .banner {
+        height: 383px;
+        overflow: hidden;
+        &__img {
+            height: initial;
+            max-width: 1440px;
+            position: relative;
+            z-index: 0;
+            top: -330px;
+        }
+    }
+}

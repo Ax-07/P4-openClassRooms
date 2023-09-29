@@ -1,5 +1,9 @@
 .footer {
-    padding: 25px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    top: 50px;
+    padding: 30px 25px;
     background-color: var(--grey);
     color: white;
     &__logo {
@@ -29,6 +33,10 @@
     &__text {
         display: flex;
         align-items: center;
+        width: 190px;
+        &--smaller {
+            width: 130px
+        }
         &::before {
             font-family: "Font Awesome 6 Free";
             font-weight: 900;
@@ -53,3 +61,24 @@
                    translateY(-1px) ;
     }
 }
+
+@media (min-width: 1024px) {
+    .footer {
+        flex-direction: row-reverse;
+        align-items: flex-end;
+flex: 0 0 114px;
+        gap: 15px;
+        &__logo {
+            margin-bottom: 0;
+            width: 138px;
+        }
+        &__list {
+            flex-direction: row;
+            gap: 7px;
+        }
+        &__item {
+        }
+
+    }
+}
+    

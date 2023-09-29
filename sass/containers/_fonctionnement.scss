@@ -1,8 +1,10 @@
 .fonctionnement {
     display: flex;
     flex-direction: column;
+    width: 375px;
     height: 440px;
     padding: 48px 20px 68px 20px;
+    margin: 0 auto;
     &__title {
         height: 31px;
         margin-bottom: 26px;
@@ -18,10 +20,11 @@
     }
     &__item {
         display: flex;
-        counter-increment: steps;
         flex: 1;
+        counter-increment: steps;
         align-items: center;
         list-style: none;
+
         &::before {
             content: counter(steps);
             display: flex;
@@ -35,6 +38,25 @@
             background-color: var(--color-primary);
             color: var(--white);
             font-size: small;
-        }      
+        }
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .fonctionnement {
+        height: initial;
+        width: 100%;
+        padding: 50px 180px;
+        &__title {
+            margin-bottom: 25px;
+        }
+        &__list {
+            flex-direction: row;
+            gap: 24px;
+        }
+        &__item {
+            flex: initial;
+            height: 72.4px;
+        }
     }
 }

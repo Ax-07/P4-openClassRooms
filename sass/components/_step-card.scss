@@ -1,6 +1,8 @@
 .step-card {
+    position: relative;
     display: flex;
-    flex: 1;
+     width: 322px;
+
     align-items: center;
     align-self: stretch;
     border-radius: 25px;
@@ -11,7 +13,7 @@
         color: var(--grey-4);
         &--mobile {
             margin-left: 33.5px;
-            transform: translateY(-5px) scale(1.085, 1.25);
+            transform: translateY(-3px) scale(1.085, 1.25);
         }
         &--list {
             margin-left: 34.5px;
@@ -25,7 +27,8 @@
     }
     &__text {
         position: absolute;
-        left: 106px;
+        right: 38px;
+        width: 211px ;
         height: 15.67px;
         &--mobile {
             transform: translateY(-2px);

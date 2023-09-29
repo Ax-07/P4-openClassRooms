@@ -1,0 +1,20 @@
+.main {
+    max-width: 1440px;
+    position: relative;
+    transition: all 0.5s;
+    overflow: hidden;
+   &__home {
+    // height: 1000px;
+       top: 50px;
+   }
+   &__menu {
+    // height: 1000px;
+   }
+}
+@media (min-width: 1440px) {
+    .main {
+    margin: 0 auto;
+    height: 1221px;
+
+    }
+}
