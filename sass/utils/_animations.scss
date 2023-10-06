@@ -1,0 +1,84 @@
+@keyframes slideInLeft {
+    0% { transform: translateX(-100%); opacity: 0;}
+    100% { transform: translateX(0%); opacity: 1;}
+}
+@keyframes slideInRight {
+    0% { transform: translateX(100%); opacity: 0;}
+    100% { transform: translateX(0%); opacity: 1;}
+}
+@keyframes remove-overflow {
+    0% { overflow: hidden; }
+    100% { overflow: visible; }
+}
+/***** fadein *****/
+@mixin fadeIn { animation: fadeIn $transition-time forwards; }
+@keyframes fadeIn {
+    0% { opacity: 0; z-index: 0; }
+    100% { opacity: 1; z-index: 1; }
+}
+/***** fadeout *****/
+@mixin fadeOut { animation: fadeOut $transition-time forwards; }
+@keyframes fadeOut {
+    0% {
+      width: 100vw;
+      height: 100vh;
+      opacity: 1;
+      z-index: 100;
+    }
+    33% {
+      width: 100vw;
+      height: 100vh;
+      opacity: 1;
+      z-index: 100;
+    }
+    66% {
+      width: 100vw;
+      height: 100vh;
+      opacity: 1;
+      z-index: 100;
+    }
+    90% {
+      width: 100vw;
+      height: 100vh;
+      opacity: 0;
+      z-index: 0;
+    }
+    100% {
+      width: 0%;
+      height: 0%;
+      opacity: 0;
+      z-index: 0;
+    }
+  }
+@keyframes display-search-form {
+    0% { height: 0px }
+    100% { height: 50px; }
+}
+@keyframes hide-search-form {
+    0% { height: 50px; }
+    100% { height: 0px; }
+}
+@keyframes animate {
+    0% {
+      transform: perspective(1000px) rotateY(0deg);
+      scale:1;
+    }
+    50% {
+      transform: perspective(1000px) rotateY(180deg);
+      scale: 1.75;
+    }
+    100% {
+      transform: perspective(1000px) rotateY(-360deg);
+      scale: 0.1;
+    }
+  }
+@keyframes cover {
+    0% {
+      border: 12px solid black;
+      border-radius: 50%;
+    }
+    100% {
+      border: 1444px solid white;
+      border-radius: 0;
+    }
+  }

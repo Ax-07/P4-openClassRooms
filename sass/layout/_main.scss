@@ -2,19 +2,31 @@
     max-width: 1440px;
     position: relative;
     transition: all 0.5s;
-    overflow: hidden;
+    // overflow: hidden;
    &__home {
-    // height: 1000px;
-       top: 50px;
+    // padding-top: 113px;
+
    }
    &__menu {
-    // height: 1000px;
+
    }
 }
 @media (min-width: 1440px) {
     .main {
     margin: 0 auto;
-    height: 1221px;
+    // height: 1221px;
 
     }
+}
+@media (min-width: 1024px) {
+    .main {
+        &__home {
+            padding-top: 50px;
+        }
+        &__menu {
+        }
+    }
+}
+@media (min-width: 768px) {
+    .main {}
 }

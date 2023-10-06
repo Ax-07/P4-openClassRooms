@@ -1,12 +1,15 @@
 .search-form {
+    position: absolute;
+    top: 63px;
+    z-index: -1;
     display: flex;
     align-items: center;
+    justify-content: center;
     transition: height 0.5s;
     overflow: hidden;
     width: 100%;
-    justify-content: center;
+    height: 50px;
     background-color: var(--grey-2);
-
 
     &__icon {
         position: relative;
@@ -54,9 +57,9 @@
 @media screen and (min-width: 1024px) {
     .search-form {
         position: absolute;
-        z-index: -1;
+        z-index: 1;
         top: 96px;
-        height: 50px;
+        // height: ;
         &__btn {
             display: flex;
         }

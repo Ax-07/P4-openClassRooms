@@ -1,23 +1,31 @@
 .card {
     display: flex;
     flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    height: 251px;
     gap: 16px;
     position: relative;
     border-radius: 15px;
     background-color: white;
     z-index: 0;
+    overflow: hidden;
+
     &__container {
         position: absolute;
         top: 0;
         left: 0;
         width: 100%;
         height: 100%;
-        border-radius: inherit;
+        z-index: 2;
     }
     &__img {
+        width: 100%;
         height: 231px;
         border-radius: 15px 15px 0 0;
         object-fit: cover;
+        position: relative;
+        bottom: 70px;
     }
     &__badge--new {
         display: flex;
@@ -38,8 +46,15 @@
         }
     }
     &__content {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-self: flex-start;
         margin-left: 13px;
         padding-bottom: 12px;
+        position: absolute;
+        bottom: 0;
+
     }
     &__title {
         margin-bottom: 5px;
@@ -72,5 +87,20 @@
                    color: transparent; /* Rendre le contenu de l'icône transparent */
                    -webkit-background-clip: text; /* Pour le remplissage de dégradé */
                    background-clip: text; /* Pour le remplissage de dégradé */
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .card {
+        max-width: 490px;
+
+        &__img {
+        }
+        &__content {
+            align-self: flex-start;
+        }
+        &__btn {
+            display: block;
+        }
     }
 }

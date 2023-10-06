@@ -13,9 +13,14 @@
     background: var(--White, #FFF);
     box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.10);
     overflow: hidden;
-
+    transition: all var(--transition-time);
     &__checkbox {
       display: none;
+    }
+    :hover {
+      ~.menu-card__content {
+        flex: 0 0 calc(var(--card-width) - var(--checked-width));
+      }
     }
     :checked {
       ~.menu-card__content {
@@ -100,6 +105,22 @@
       width: 24px;
       height: 24px;
     }
+}
+@for $i from 1 through 10 {
+    .menu-card--#{$i}:nth-of-type(2n+1){
+      transform: translateX(-1000%);
+    }
+    .menu-card--#{$i}:nth-of-type(2n){
+      transform: translateX(1000%);
+    }
+}
+@for $i from 1 through 10 {
+  .menu-card--#{$i}:nth-of-type(2n+1) {
+    animation: slideInLeft 0.5s #{$i * 0.25}s forwards;
+  }
+  .menu-card--#{$i}:nth-of-type(2n) {
+    animation: slideInRight 0.5s #{$i * 0.25}s forwards;
+  }
 }
 
 @media screen and (min-width: 1024px) {

@@ -24,14 +24,15 @@
   }
 
   &__title {
-    height: 27px;
+    // height: 27px;
   }
 
   &__btn-like {
-    display: flex;
-    justify-content: center;
-    align-items: flex-end;
+    // display: flex;
+    // justify-content: center;
+    // align-items: flex-end;
     margin-right: 24px;
+    margin-top: 9px;
   }
 
   &__category {
@@ -53,5 +54,8 @@
 
       text-transform: uppercase;
     }
+  }
+  &__btn--submit {
+    margin-bottom: 15px;
   }
 }
