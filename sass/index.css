@@ -310,6 +310,7 @@
   text-align: center;
   padding-top: 89px;
   background-color: var(--color-bg);
+  transition: all 0.25s;
 }
 .hero__title {
   height: 68px;
@@ -321,9 +322,6 @@
 }
 
 @media screen and (min-width: 768px) {
-  .hero {
-    padding-top: 30px;
-  }
   .hero__title {
     height: initial;
     font-size: 40px;
@@ -408,7 +406,30 @@
   gap: 18px;
 }
 
+@media screen and (min-width: 768px) {
+  .restaurants {
+    padding: 30px 100px;
+  }
+  .restaurants__container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px 60px;
+  }
+}
 @media screen and (min-width: 1024px) {
+  .restaurants {
+    padding: 30px 100px;
+  }
+  .restaurants__title {
+    margin-bottom: 28px;
+  }
+  .restaurants__container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 50px 100px;
+  }
+}
+@media screen and (min-width: 1280px) {
   .restaurants {
     padding: 30px 180px;
   }

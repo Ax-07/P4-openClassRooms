@@ -3,6 +3,7 @@
   text-align: center;
   padding-top: 89px;
   background-color: var(--color-bg);
+  transition: all 0.25s;
 
     &__title {
       height: 68px;
@@ -15,7 +16,7 @@
   }
   @media screen and (min-width: 768px) {
     .hero {
-      padding-top: 30px;
+      // padding-top: 30px;
       &__title {
         height: initial;
         font-size: 40px;

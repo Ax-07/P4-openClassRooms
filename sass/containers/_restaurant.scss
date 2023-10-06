@@ -10,8 +10,34 @@
         gap: 18px;
     }
 }
+@media screen and (min-width: 768px) {
+    .restaurants {
+        padding: 30px 100px;
+        &__title {
+            // margin-bottom: 28px;
+        }
+        &__container {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 30px 60px;
+        }
+    }
+}
 
 @media screen and (min-width: 1024px) {
+    .restaurants {
+        padding: 30px 100px;
+        &__title {
+            margin-bottom: 28px;
+        }
+        &__container {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 50px 100px;
+        }
+    }
+}
+@media screen and (min-width: 1280px) {
     .restaurants {
         padding: 30px 180px;
         &__title {
