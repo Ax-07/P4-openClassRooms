@@ -1266,4 +1266,37 @@
 
 .letter-8 {
   animation: fadeIn 2s ease-in-out 0.8s forwards;
+}
+
+@media screen and (min-width: 1024px) {
+  .circle {
+    width: 400px;
+    height: 400px;
+  }
+  .circle-background {
+    width: 420px;
+    height: 420px;
+    border-width: 24px;
+  }
+  .circle-center {
+    width: 220px;
+    height: 220px;
+    border-width: 2px;
+  }
+  .circle-2 {
+    width: 440px;
+    height: 440px;
+    border-width: 4px;
+  }
+  .circle-1 {
+    border-width: 8px;
+  }
+  .circle-3 {
+    width: 340px;
+    height: 340px;
+    border-width: 4px;
+  }
+  .letter {
+    font-size: 100px;
+  }
 }/*# sourceMappingURL=index.css.map */
