@@ -131,28 +131,28 @@
   height: 100%;
   background-color: white;
   opacity: 0;
-  transition: height, opacity 1.5s;
+  transition: height, opacity 0.5s;
   z-index: 0;
   overflow: hidden;
 }
 .page__home {
-  animation: fadeIn 1.5s forwards, remove-overflow 1.5s forwards 1.5s;
+  animation: fadeIn 0.5s forwards, remove-overflow 0.5s forwards 0.5s;
 }
 .page__home:target > .overlay-container {
   display: none;
 }
 .page__home:target > .header > .search-form {
-  animation: display-search-form 0.75s forwards;
+  animation: display-search-form 0.25s forwards;
 }
 .page__menu {
   overflow: visible;
-  animation: fadeIn 1.5s forwards;
+  animation: fadeIn 0.5s forwards;
 }
 .page__menu:target .header {
   background-color: white;
 }
 .page__menu:target > .header > .search-form {
-  animation: hide-search-form 1.5s forwards;
+  animation: hide-search-form 0.5s forwards;
 }
 
 .header {
@@ -939,83 +939,83 @@
 }
 
 .menu-card--1:nth-of-type(2n+1) {
-  animation: slideInLeft 0.5s 0.25s forwards;
+  animation: slideInLeft 0.5s 0.125s forwards;
 }
 
 .menu-card--1:nth-of-type(2n) {
-  animation: slideInRight 0.5s 0.25s forwards;
+  animation: slideInRight 0.5s 0.125s forwards;
 }
 
 .menu-card--2:nth-of-type(2n+1) {
-  animation: slideInLeft 0.5s 0.5s forwards;
+  animation: slideInLeft 0.5s 0.25s forwards;
 }
 
 .menu-card--2:nth-of-type(2n) {
-  animation: slideInRight 0.5s 0.5s forwards;
+  animation: slideInRight 0.5s 0.25s forwards;
 }
 
 .menu-card--3:nth-of-type(2n+1) {
-  animation: slideInLeft 0.5s 0.75s forwards;
+  animation: slideInLeft 0.5s 0.375s forwards;
 }
 
 .menu-card--3:nth-of-type(2n) {
-  animation: slideInRight 0.5s 0.75s forwards;
+  animation: slideInRight 0.5s 0.375s forwards;
 }
 
 .menu-card--4:nth-of-type(2n+1) {
-  animation: slideInLeft 0.5s 1s forwards;
+  animation: slideInLeft 0.5s 0.5s forwards;
 }
 
 .menu-card--4:nth-of-type(2n) {
-  animation: slideInRight 0.5s 1s forwards;
+  animation: slideInRight 0.5s 0.5s forwards;
 }
 
 .menu-card--5:nth-of-type(2n+1) {
-  animation: slideInLeft 0.5s 1.25s forwards;
+  animation: slideInLeft 0.5s 0.625s forwards;
 }
 
 .menu-card--5:nth-of-type(2n) {
-  animation: slideInRight 0.5s 1.25s forwards;
+  animation: slideInRight 0.5s 0.625s forwards;
 }
 
 .menu-card--6:nth-of-type(2n+1) {
-  animation: slideInLeft 0.5s 1.5s forwards;
+  animation: slideInLeft 0.5s 0.75s forwards;
 }
 
 .menu-card--6:nth-of-type(2n) {
-  animation: slideInRight 0.5s 1.5s forwards;
+  animation: slideInRight 0.5s 0.75s forwards;
 }
 
 .menu-card--7:nth-of-type(2n+1) {
-  animation: slideInLeft 0.5s 1.75s forwards;
+  animation: slideInLeft 0.5s 0.875s forwards;
 }
 
 .menu-card--7:nth-of-type(2n) {
-  animation: slideInRight 0.5s 1.75s forwards;
+  animation: slideInRight 0.5s 0.875s forwards;
 }
 
 .menu-card--8:nth-of-type(2n+1) {
-  animation: slideInLeft 0.5s 2s forwards;
+  animation: slideInLeft 0.5s 1s forwards;
 }
 
 .menu-card--8:nth-of-type(2n) {
-  animation: slideInRight 0.5s 2s forwards;
+  animation: slideInRight 0.5s 1s forwards;
 }
 
 .menu-card--9:nth-of-type(2n+1) {
-  animation: slideInLeft 0.5s 2.25s forwards;
+  animation: slideInLeft 0.5s 1.125s forwards;
 }
 
 .menu-card--9:nth-of-type(2n) {
-  animation: slideInRight 0.5s 2.25s forwards;
+  animation: slideInRight 0.5s 1.125s forwards;
 }
 
 .menu-card--10:nth-of-type(2n+1) {
-  animation: slideInLeft 0.5s 2.5s forwards;
+  animation: slideInLeft 0.5s 1.25s forwards;
 }
 
 .menu-card--10:nth-of-type(2n) {
-  animation: slideInRight 0.5s 2.5s forwards;
+  animation: slideInRight 0.5s 1.25s forwards;
 }
 
 @media screen and (min-width: 768px) {
