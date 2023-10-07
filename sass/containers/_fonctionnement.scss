@@ -46,7 +46,7 @@
     .fonctionnement {
         height: initial;
         width: 100%;
-        padding: 50px 180px;
+        padding: 50px 10px;
         &__title {
             margin-bottom: 25px;
         }
@@ -58,5 +58,10 @@
             flex: initial;
             height: 72.4px;
         }
+    }
+}
+@media (min-width: 1280px) {
+    .fonctionnement {
+        padding: 50px 180px;
     }
 }
