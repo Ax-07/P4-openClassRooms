@@ -1,5 +1,11 @@
 /* global */
 
+/* breackpoint */
+$breakpoint-mobile: 320px; // min-width
+$breakpoint-tablet: 768px; // min-width
+$breakpoint-desktop: 1024px; // min-width
+$breakpoint-large-desktop: 1280px; // min-width
+
 /* color */
 $color-primary: #9356dc;
 $color-secondary: #ff79da;
@@ -18,9 +24,9 @@ $gradient: linear-gradient(
 
 /* time */
 /* transition time */
-$short-transition-time: 0.25s;
-$transition-time: 0.5s;
-$long-transition-time: 0.75s;
+$short-transition-time: 0.5s;
+$transition-time: 0.75s;
+$long-transition-time: 1s;
 /* loader time */
 $short-time: 1s;
 $time: 2s;

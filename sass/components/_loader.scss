@@ -2,8 +2,9 @@
   @include row-flex-center;
   position: absolute;
   inset: 0;
-  height: 100%;
-  width: 100%;
+  height: 100vh;
+  width: 100vw;
+  // scale: 0.9;
   background-color: white;
   animation: fadeOut $long-time ease-in-out forwards;
 }

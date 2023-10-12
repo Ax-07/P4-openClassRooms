@@ -1,7 +1,7 @@
 .hero {
   @include column-flex-center;
   text-align: center;
-  padding-top: 89px;
+  padding-top: 39px;
   background-color: var(--color-bg);
   transition: all 0.25s;
 
@@ -31,7 +31,7 @@
   }
   @media screen and (min-width: 1024px) {
     .hero {
-      // padding-top: 30px;
+      padding-top: 30px;
       &__title {
         // font-size: 48px;
         // margin-bottom: 18px;
