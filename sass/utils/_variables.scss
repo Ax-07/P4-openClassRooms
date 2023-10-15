@@ -1,10 +1,12 @@
 /* global */
 
 /* breackpoint */
-$breakpoint-mobile: 320px; // min-width
-$breakpoint-tablet: 768px; // min-width
-$breakpoint-desktop: 1024px; // min-width
-$breakpoint-large-desktop: 1280px; // min-width
+$mobile: 320px; // min-width
+$tablet: 768px; // min-width
+$sm-desktop: 1024px; // min-width
+$desktop: 1280px; // min-width
+$lg-desktop: 1440px; // min-width
+
 
 /* color */
 $color-primary: #9356dc;

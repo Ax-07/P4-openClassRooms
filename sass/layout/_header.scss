@@ -39,7 +39,7 @@
 
 
 
-@media (min-width: 1024px) {
+@media (min-width: $sm-desktop) {
     .header {
         position: relative;
         z-index: 1;

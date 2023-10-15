@@ -3,7 +3,6 @@
     position: relative;
     transition: all 0.5s;
 
-    // overflow: hidden;
     &__home {
         padding-top: 50px;
     }
@@ -11,13 +10,13 @@
     &__menu {}
 }
 
-@media (min-width: 1441px) {
+@media (min-width: $lg-desktop) {
     .main {
         margin: 0 auto;
     }
 }
 
-@media (min-width: 1025px) {
+@media (min-width: $sm-desktop) {
     .main {
         &__home {
             padding-top: 50px;
@@ -27,6 +26,6 @@
     }
 }
 
-@media (min-width: 768px) {
+@media (min-width: $tablet) {
     .main {}
 }
