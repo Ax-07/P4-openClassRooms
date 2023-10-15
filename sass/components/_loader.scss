@@ -1,6 +1,6 @@
 .overlay-container {
   @include row-flex-center;
-  position: absolute;
+  position: fixed;
   inset: 0;
   height: 100vh;
   width: 100vw;
