@@ -26,24 +26,13 @@
 
 @media screen and (min-width: 1024px) {
     .restaurants {
-        padding: 30px 80px;
+        padding: 30px 180px;
         &__title {
             margin-bottom: 28px;
         }
         &__container {
             display: grid;
             grid-template-columns: repeat(2, 1fr);
-            gap: 50px 80px;
-        }
-    }
-}
-@media screen and (min-width: 1280px) {
-    .restaurants {
-        padding: 30px 180px;
-        &__title {
-            margin-bottom: 28px;
-        }
-        &__container {
             gap: 50px 100px;
         }
     }
