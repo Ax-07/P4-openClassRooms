@@ -4,7 +4,7 @@
     transition: all 0.5s;
 
     &__home {
-        padding-top: 50px;
+        // padding-top: 50px;
     }
 
     &__menu {}
@@ -19,7 +19,7 @@
 @media (min-width: $sm-desktop) {
     .main {
         &__home {
-            padding-top: 50px;
+            // padding-top: 50px;
         }
 
         &__menu {}

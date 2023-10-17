@@ -13,12 +13,14 @@
     &__icon {
         color: var(--grey-4);
         &--mobile {
+            font-size: 20px;
+            line-height: 20px;
             margin-left: 33.5px;
-            transform: translateY(-3px) scale(1.085, 1.25);
+            transform: translateY(-3px) scale(0.87, 1);
         }
         &--list {
             margin-left: 34.5px;
-            transform: translateY(-4px);
+            transform: translateY(-3px);
         }
         &--store {
             margin-left: 35.5px;
@@ -31,14 +33,15 @@
         left: 73.5px;
         // width: 211px ;
         height: 15.67px;
-        &--mobile {
-            transform: translateY(-2px);
-        }
-        &--list {
-            transform: translateY(-4px);
-        }
-        &--store {
-            transform: translateY(-2px);
-        }
+        transform: translateY(-3px);
+
+        // &--mobile {
+        // }
+        // &--list {
+        //     transform: translateY(-4px);
+        // }
+        // &--store {
+        //     transform: translateY(-2px);
+        // }
     }
 }

@@ -1,7 +1,7 @@
 .fonctionnement {
     display: flex;
     flex-direction: column;
-    width: 375px;
+    max-width: 375px;
     height: 440px;
     padding: 48px 20px 68px 20px;
     margin: 0 auto;
@@ -46,8 +46,8 @@
 @media screen and (min-width: 1024px) {
     .fonctionnement {
         height: initial;
-        width: 100%;
-        padding: 50px 80px;
+        max-width: 100%;
+        padding: 50px 180px;
         &__title {
             margin-bottom: 25px;
         }
@@ -61,8 +61,8 @@
         }
     }
 }
-@media (min-width: 1280px) {
-    .fonctionnement {
-        padding: 50px 180px;
-    }
-}
+// @media (min-width: 1280px) {
+//     .fonctionnement {
+//         padding: 50px 180px;
+//     }
+// }

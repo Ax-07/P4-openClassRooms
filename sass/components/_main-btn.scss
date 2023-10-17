@@ -3,10 +3,11 @@
     justify-content: center;
     align-items: center;
     position: relative;
+    
     z-index: 1;
     height: 50px;
     width: 218px;
-    margin: 0 75px 57px 82px;
+    margin: 0 75px 0 82px;
     font-size: 16px;
     line-height: 24px;
     border: none;
@@ -47,6 +48,6 @@
 @media screen and (min-width: 1024px) {
     .btn__link {
         margin: 0;
-        margin-bottom: 40px;
+        // margin-bottom: 40px;
     }
 }

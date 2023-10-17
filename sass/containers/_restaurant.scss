@@ -44,8 +44,6 @@
             margin-bottom: 28px;
         }
         &__container {
-            display: grid;
-            grid-template-columns: repeat(2, 1fr);
             gap: 50px 100px;
         }
     }
