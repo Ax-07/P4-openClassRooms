@@ -709,8 +709,7 @@
 .step-card__text {
   position: absolute;
   left: 73.5px;
-  height: 15.67px;
-  transform: translateY(-3px);
+  transform: translateY(-0.67px);
 }
 
 .card {
