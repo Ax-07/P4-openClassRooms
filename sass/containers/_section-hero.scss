@@ -1,5 +1,5 @@
 .hero {
-  @include column-flex-center;
+  @include flex(column, center, center);
   text-align: center;
   padding: 89px 0 57px;
   background-color: $bg-color;

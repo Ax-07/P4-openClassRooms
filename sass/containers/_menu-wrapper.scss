@@ -1,5 +1,5 @@
 .menu__wrapper {
-    @include column-flex-center;
+    @include flex(column, center, center);
     position: relative;
     gap: 40px;
     top: -25px;
