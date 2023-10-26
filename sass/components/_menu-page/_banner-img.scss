@@ -1,6 +1,4 @@
 .banner {
-
-
     &__img {
         width: 100%;
         height: 275px;
@@ -13,11 +11,12 @@
         height: 383px;
         overflow: hidden;
         &__img {
-            height: 956px;
-            max-width: 1440px;
             position: relative;
             z-index: 0;
             top: -330px;
+            height: 956px;
+            max-width: 1440px;
+
             &--note-enchantee {
                 height: initial;
             }

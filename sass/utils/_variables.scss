@@ -9,17 +9,20 @@ $lg-desktop: 1440px; // min-width
 
 
 /* color */
+$white: #fff;
+$grey: #353535;
+$grey-lightest: #eaeaea;
+$grey-lighter: #7e7e7e;
+$bg-color: #f6f6f6;
+
 $color-primary: #9356dc;
 $color-secondary: #ff79da;
 $color-tertiary: #99e2d0;
 $smooth-white: rgba(0, 0, 0, 0.02);
 $gradient: linear-gradient(
-  to right,
-  $color-tertiary 5%,
-  $color-primary 15%,
-  $color-secondary 65%,
-  $color-primary 80%,
-  $color-tertiary 100%
+  $color-secondary -11.44%,
+  $color-primary 123.93%,
+
 );
 
 /* font */
@@ -33,6 +36,11 @@ $long-transition-time: 1s;
 $short-time: 1s;
 $time: 2s;
 $long-time: 3s;
+
+/* menu card */
+$card-width: 349px;
+$card-width--lg: 634px;
+$checked-width: 59px;
 
 /* animation */
 

@@ -23,11 +23,11 @@
     <div id="la_palette_du_gout" class="page page__menu">
         <header id="header" class="header">
             <a href="../index.html#home" class="header__icon-back header__icon-back fa fa-arrow-left no-link-style"></a>
-            <div class="header__logo-wrapper">
+            <a href="../index.html#home" class="header__logo-wrapper">
                 <h1 class="header__logo header__logo--text">ohmyfood</h1>
                 <img class="header__logo header__logo--img" src="../assets/images/logo/ohmyfood@2x.svg"
                     alt="image du logo">
-            </div>
+            </a>
             <form id="search-location" action="#" method="GET" class="search-form search-form--menu">
                 <i class="search-form__icon fa-solid fa-location-dot" aria-hidden="true"></i>
                 <input type="search" name="location" value="Paris, Belleville" class="search-form__input input__text"
@@ -47,10 +47,8 @@
                 <div class="menu__header">
                     <h2 class="menu__title">La palette du goût</h2>
                     <div class="menu__btn-like btn-like">
-                        <input type="checkbox" id="btn-like-1" class="btn-like-checkbox">
-                        <label for="btn-like-1" class="btn-like-label">
-                            <span class="btn-like-icon"></span>
-                        </label>
+                        <input type="checkbox" id="btn-like--1" class="btn-like__input">
+                        <label for="btn-like--1" class="btn-like__icon"></label>
                     </div>
                 </div>
                 <div id="entrées" class="menu__category">
@@ -59,55 +57,49 @@
                         <span class="menu__category-title-line"></span>
                     </div>
                     <article class="menu-card menu-card--1">
-                        <div class="menu-card__slider">
-                            <input type="checkbox" id="card__check-1" class="menu-card__checkbox">
-                            <label for="card__check-1" class="menu-card__label">
-                            </label>
-                            <div class="menu-card__content">
-                                <div class="menu-card__wrapper">
-                                    <h3 class="menu-card__title">Fricassée d'escargots</h3>
-                                    <p class="menu-card__description">Au piment d'Espelette</p>
-                                </div>
-                                <h4 class="menu-card__price">25€</h4>
+                        <input type="checkbox" id="card__check-1" class="menu-card__checkbox">
+                        <label for="card__check-1" class="menu-card__label">
+                        </label>
+                        <div class="menu-card__content">
+                            <div class="menu-card__wrapper">
+                                <h3 class="menu-card__title">Fricassée d'escargots</h3>
+                                <p class="menu-card__description">Au piment d'Espelette</p>
                             </div>
-                            <span class="menu-card--checked">
-                                <i class="fa-solid fa-check menu-card__iconCheck"></i>
-                            </span>
+                            <h4 class="menu-card__price">25€</h4>
                         </div>
+                        <span class="menu-card--checked">
+                            <i class="fa-solid fa-check menu-card__iconCheck"></i>
+                        </span>
                     </article>
                     <article class="menu-card menu-card--2">
-                        <div class="menu-card__slider">
-                            <input type="checkbox" id="card__check-2" class="menu-card__checkbox">
-                            <label for="card__check-2" class="menu-card__label">
-                            </label>
-                            <div class="menu-card__content">
-                                <div class="menu-card__wrapper">
-                                    <h3 class="menu-card__title">Foie gras de canard mi-cuit</h3>
-                                    <p class="menu-card__description">Et ses copeaux de truffe noire</p>
-                                </div>
-                                <h4 class="menu-card__price">35€</h4>
+                        <input type="checkbox" id="card__check-2" class="menu-card__checkbox">
+                        <label for="card__check-2" class="menu-card__label">
+                        </label>
+                        <div class="menu-card__content">
+                            <div class="menu-card__wrapper">
+                                <h3 class="menu-card__title">Foie gras de canard mi-cuit</h3>
+                                <p class="menu-card__description">Et ses copeaux de truffe noire</p>
                             </div>
-                            <span class="menu-card--checked">
-                                <i class="fa-solid fa-check menu-card__iconCheck"></i>
-                            </span>
+                            <h4 class="menu-card__price">35€</h4>
                         </div>
+                        <span class="menu-card--checked">
+                            <i class="fa-solid fa-check menu-card__iconCheck"></i>
+                        </span>
                     </article>
                     <article class="menu-card menu-card--3">
-                        <div class="menu-card__slider">
-                            <input type="checkbox" id="card__check-3" class="menu-card__checkbox">
-                            <label for="card__check-3" class="menu-card__label">
-                            </label>
-                            <div class="menu-card__content">
-                                <div class="menu-card__wrapper">
-                                    <h3 class="menu-card__title">Œuf au plat</h3>
-                                    <p class="menu-card__description">Assaisonné à la truffe sur lit de caviar</p>
-                                </div>
-                                <h4 class="menu-card__price">20€</h4>
+                        <input type="checkbox" id="card__check-3" class="menu-card__checkbox">
+                        <label for="card__check-3" class="menu-card__label">
+                        </label>
+                        <div class="menu-card__content">
+                            <div class="menu-card__wrapper">
+                                <h3 class="menu-card__title">Œuf au plat</h3>
+                                <p class="menu-card__description">Assaisonné à la truffe sur lit de caviar</p>
                             </div>
-                            <span class="menu-card--checked">
-                                <i class="fa-solid fa-check menu-card__iconCheck"></i>
-                            </span>
+                            <h4 class="menu-card__price">20€</h4>
                         </div>
+                        <span class="menu-card--checked">
+                            <i class="fa-solid fa-check menu-card__iconCheck"></i>
+                        </span>
                     </article>
                 </div>
                 <div id="plats" class="menu__category">
@@ -116,55 +108,49 @@
                         <span class="menu__category-title-line"></span>
                     </div>
                     <article class="menu-card menu-card--4">
-                        <div class="menu-card__slider">
-                            <input type="checkbox" id="card__check-4" class="menu-card__checkbox">
-                            <label for="card__check-4" class="menu-card__label">
-                            </label>
-                            <div class="menu-card__content">
-                                <div class="menu-card__wrapper">
-                                    <h3 class="menu-card__title">Filet de bœuf aux herbes</h3>
-                                    <p class="menu-card__description">Accompagné de sa ribambelle de légumes</p>
-                                </div>
-                                <h4 class="menu-card__price">40€</h4>
+                        <input type="checkbox" id="card__check-4" class="menu-card__checkbox">
+                        <label for="card__check-4" class="menu-card__label">
+                        </label>
+                        <div class="menu-card__content">
+                            <div class="menu-card__wrapper">
+                                <h3 class="menu-card__title">Filet de bœuf aux herbes</h3>
+                                <p class="menu-card__description">Accompagné de sa ribambelle de légumes</p>
                             </div>
-                            <span class="menu-card--checked">
-                                <i class="fa-solid fa-check menu-card__iconCheck"></i>
-                            </span>
+                            <h4 class="menu-card__price">40€</h4>
                         </div>
+                        <span class="menu-card--checked">
+                            <i class="fa-solid fa-check menu-card__iconCheck"></i>
+                        </span>
                     </article>
                     <article class="menu-card menu-card--5">
-                        <div class="menu-card__slider">
-                            <input type="checkbox" id="card__check-5" class="menu-card__checkbox">
-                            <label for="card__check-5" class="menu-card__label">
-                            </label>
-                            <div class="menu-card__content">
-                                <div class="menu-card__wrapper">
-                                    <h3 class="menu-card__title">Parmentier de queue de bœuf</h3>
-                                    <p class="menu-card__description">À la truffe noire sur sa purée de panais</p>
-                                </div>
-                                <h4 class="menu-card__price">35€</h4>
+                        <input type="checkbox" id="card__check-5" class="menu-card__checkbox">
+                        <label for="card__check-5" class="menu-card__label">
+                        </label>
+                        <div class="menu-card__content">
+                            <div class="menu-card__wrapper">
+                                <h3 class="menu-card__title">Parmentier de queue de bœuf</h3>
+                                <p class="menu-card__description">À la truffe noire sur sa purée de panais</p>
                             </div>
-                            <span class="menu-card--checked">
-                                <i class="fa-solid fa-check menu-card__iconCheck"></i>
-                            </span>
+                            <h4 class="menu-card__price">35€</h4>
                         </div>
+                        <span class="menu-card--checked">
+                            <i class="fa-solid fa-check menu-card__iconCheck"></i>
+                        </span>
                     </article>
                     <article class="menu-card menu-card--6">
-                        <div class="menu-card__slider">
-                            <input type="checkbox" id="card__check-6" class="menu-card__checkbox">
-                            <label for="card__check-6" class="menu-card__label">
-                            </label>
-                            <div class="menu-card__content">
-                                <div class="menu-card__wrapper">
-                                    <h3 class="menu-card__title">Filet de turbot</h3>
-                                    <p class="menu-card__description">Aux agrumes</p>
-                                </div>
-                                <h4 class="menu-card__price">44€</h4>
+                        <input type="checkbox" id="card__check-6" class="menu-card__checkbox">
+                        <label for="card__check-6" class="menu-card__label">
+                        </label>
+                        <div class="menu-card__content">
+                            <div class="menu-card__wrapper">
+                                <h3 class="menu-card__title">Filet de turbot</h3>
+                                <p class="menu-card__description">Aux agrumes</p>
                             </div>
-                            <span class="menu-card--checked">
-                                <i class="fa-solid fa-check menu-card__iconCheck"></i>
-                            </span>
+                            <h4 class="menu-card__price">44€</h4>
                         </div>
+                        <span class="menu-card--checked">
+                            <i class="fa-solid fa-check menu-card__iconCheck"></i>
+                        </span>
                     </article>
                 </div>
                 <div id="desserts" class="menu__category">
@@ -173,62 +159,56 @@
                         <span class="menu__category-title-line"></span>
                     </div>
                     <article class="menu-card menu-card--7">
-                        <div class="menu-card__slider">
-                            <input type="checkbox" id="card__check-7" class="menu-card__checkbox">
-                            <label for="card__check-7" class="menu-card__label">
-                            </label>
-                            <div class="menu-card__content">
-                                <div class="menu-card__wrapper">
-                                    <h3 class="menu-card__title">Paris-Brest</h3>
-                                    <p class="menu-card__description">Revisité</p>
-                                </div>
-                                <h4 class="menu-card__price">18€</h4>
+                        <input type="checkbox" id="card__check-7" class="menu-card__checkbox">
+                        <label for="card__check-7" class="menu-card__label">
+                        </label>
+                        <div class="menu-card__content">
+                            <div class="menu-card__wrapper">
+                                <h3 class="menu-card__title">Paris-Brest</h3>
+                                <p class="menu-card__description">Revisité</p>
                             </div>
-                            <span class="menu-card--checked">
-                                <i class="fa-solid fa-check menu-card__iconCheck"></i>
-                            </span>
+                            <h4 class="menu-card__price">18€</h4>
                         </div>
+                        <span class="menu-card--checked">
+                            <i class="fa-solid fa-check menu-card__iconCheck"></i>
+                        </span>
                     </article>
                     <article class="menu-card menu-card--8">
-                        <div class="menu-card__slider">
-                            <input type="checkbox" id="card__check-8" class="menu-card__checkbox">
-                            <label for="card__check-8" class="menu-card__label">
-                            </label>
-                            <div class="menu-card__content">
-                                <div class="menu-card__wrapper">
-                                    <h3 class="menu-card__title">Macaron au chocolat d'exception</h3>
-                                    <p class="menu-card__description">Et glace à la vanille de Madagascar</p>
-                                </div>
-                                <h4 class="menu-card__price">22€</h4>
+                        <input type="checkbox" id="card__check-8" class="menu-card__checkbox">
+                        <label for="card__check-8" class="menu-card__label">
+                        </label>
+                        <div class="menu-card__content">
+                            <div class="menu-card__wrapper">
+                                <h3 class="menu-card__title">Macaron au chocolat d'exception</h3>
+                                <p class="menu-card__description">Et glace à la vanille de Madagascar</p>
                             </div>
-                            <span class="menu-card--checked">
-                                <i class="fa-solid fa-check menu-card__iconCheck"></i>
-                            </span>
+                            <h4 class="menu-card__price">22€</h4>
                         </div>
+                        <span class="menu-card--checked">
+                            <i class="fa-solid fa-check menu-card__iconCheck"></i>
+                        </span>
                     </article>
                     <article class="menu-card menu-card--9">
-                        <div class="menu-card__slider">
-                            <input type="checkbox" id="card__check-9" class="menu-card__checkbox">
-                            <label for="card__check-9" class="menu-card__label">
-                            </label>
-                            <div class="menu-card__content">
-                                <div class="menu-card__wrapper">
-                                    <h3 class="menu-card__title">Mousse au chocolat </h3>
-                                    <p class="menu-card__description">Au piment d'Espelette et à la truffe noire</p>
-                                </div>
-                                <h4 class="menu-card__price">23€</h4>
+                        <input type="checkbox" id="card__check-9" class="menu-card__checkbox">
+                        <label for="card__check-9" class="menu-card__label">
+                        </label>
+                        <div class="menu-card__content">
+                            <div class="menu-card__wrapper">
+                                <h3 class="menu-card__title">Mousse au chocolat </h3>
+                                <p class="menu-card__description">Au piment d'Espelette et à la truffe noire</p>
                             </div>
-                            <span class="menu-card--checked">
-                                <i class="fa-solid fa-check menu-card__iconCheck"></i>
-                            </span>
+                            <h4 class="menu-card__price">23€</h4>
                         </div>
+                        <span class="menu-card--checked">
+                            <i class="fa-solid fa-check menu-card__iconCheck"></i>
+                        </span>
                     </article>
                 </div>
                 <button type="submit" class="menu__btn--submit btn__link btn__link--command">Commander</button>
             </form>
         </main>
         <footer class="footer">
-            <h3 class="footer__logo">ohmyfood</h3>
+            <a href="#home" class="footer__logo">ohmyfood</a>
             <ul class="footer__list">
                 <li class="footer__item">
                     <a href="" class="footer__link no-link-style">
@@ -253,8 +233,6 @@
             </ul>
         </footer>
     </div>
-
 </body>
-
 
 </html>

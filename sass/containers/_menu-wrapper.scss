@@ -4,37 +4,37 @@
     gap: 40px;
     top: -25px;
 }
+
 .menu__background {
     position: absolute;
-    top: -31px;
+    top: -30px;
     max-width: 1055px;
     width: 100%;
     height: 1235px;
-    border-radius: 30px 30px 0 0;
-    background-color: var(--color-bg);
+    border-radius: 32px 32px 0 0;
+    background-color: $bg-color;
     z-index: 0;
 }
+
 .menu__header {
-    // @include row-flex-center;
     position: relative;
-    // width: 341px;
-    // height: 29px;
     z-index: 1;
 }
+
 @media (min-width: 1024px) {
     .menu__wrapper {
         top: 0;
         padding-top: 11px;
-    margin-bottom: 40px;
-
+        margin-bottom: 40px;
     }
+
     .menu__header {
-        // width: 100%;
         height: 41px;
     }
+
     .menu__background {
-        top: -41px;
+        top: -40px;
+        border-radius: 51px 51px 0 0;
 
     }
 }
-    

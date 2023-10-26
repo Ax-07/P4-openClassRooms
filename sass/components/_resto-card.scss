@@ -1,14 +1,13 @@
 .card {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: flex-end;
+    @include flex(column, flex-end, center);
+    position: relative;
+    z-index: 0;
+
     height: 251px;
     gap: 16px;
-    position: relative;
+
     border-radius: 15px;
-    background-color: white;
-    z-index: 0;
+    background-color: $white;
     overflow: hidden;
 
     &__container {
@@ -19,6 +18,7 @@
         height: 100%;
         z-index: 2;
     }
+
     &__img {
         min-width: 346px;
         width: 100%;
@@ -28,6 +28,7 @@
         position: relative;
         bottom: 70px;
     }
+
     &__badge--new {
         display: flex;
         align-items: center;
@@ -46,61 +47,43 @@
             color: var(--Green-Font, #008766);
         }
     }
+
     &__content {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-self: flex-start;
+        @include flex(column, center, flex-start);
         margin-left: 13px;
         padding-bottom: 12px;
         position: absolute;
         bottom: 0;
 
     }
+
     &__title {
         margin-bottom: 5px;
     }
-    &__text {}
-    &__btn {
-        display: none; 
-        &-like {
-            position: absolute;
-            z-index: 20;
-            border: none;
-            background: none;
 
-            bottom:33px;
-            right: 25px;
-        }
-        &-icon::before {
-            font-family: "Font Awesome 6 Free";
-            content: '\f004'; /* Code Unicode pour l'icône du cœur */
-            font-size: 22px;
-            font-weight: 400;
-            display: block;
-            width: 22px;
-            height: 22px;
-        }
-    }
-    &__btn:checked + &__btn-like .card__btn-icon::before {
-        font-weight: 900;
-        background: linear-gradient(180deg, var(--color-primary) 0%, var(--color-secondary) 100%);
-                   color: transparent; /* Rendre le contenu de l'icône transparent */
-                   -webkit-background-clip: text; /* Pour le remplissage de dégradé */
-                   background-clip: text; /* Pour le remplissage de dégradé */
+    &__btn-like {
+        position: absolute;
+        z-index: 20;
+        border: none;
+        background: none;
+
+        bottom: 33px;
+        right: 25px;
     }
 }
+
 @media screen and (min-width: 768px) {
     .card {
         max-width: 490px;
 
         &__img {
-        width: 498.5px;
-
+            width: 498.5px;
         }
+
         &__content {
             align-self: flex-start;
         }
+
         &__btn {
             display: block;
         }
@@ -112,7 +95,7 @@
         max-width: 490px;
 
         &__img {
-        width: 498.5px;
+            width: 498.5px;
 
         }
     }

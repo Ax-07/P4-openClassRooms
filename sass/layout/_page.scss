@@ -7,21 +7,18 @@
     transition: height, opacity $transition-time;
     z-index: 0;
     overflow: hidden;
-    background-color: white;
+    background-color: $white;
 
     &__home {
         animation: fadeIn $transition-time forwards, display-page-home-1 $transition-time forwards $time;
         -webkit-animation: fadeIn $transition-time forwards, display-page-home-1 $transition-time forwards $time;
-        // animation: fadeIn $transition-time forwards;
 
         &:target {
-            
             & ~ .overlay-container {
                 display: none;
             }
             animation: fadeIn $transition-time forwards, display-page-2 $transition-time forwards;
             -webkit-animation: fadeIn $transition-time forwards, display-page-2 $transition-time forwards;
-            // animation: fadeIn $transition-time forwards;
 
             & > .header > .search-form {
                 animation: display-search-form $short-transition-time forwards;
@@ -33,15 +30,8 @@
     &__menu {
         animation: fadeIn $transition-time forwards, display-page-2 $transition-time forwards reverse;
         -webkit-animation: fadeIn $transition-time forwards, display-page-2 $transition-time forwards reverse;
-        // animation: fadeIn $transition-time forwards;
 
         &:target {
-            .main {}
-
-            .header {
-                // background-color: white;
-            }
-
             >.header>.search-form {
                 animation: hide-search-form $transition-time forwards;
                 -webkit-animation: hide-search-form $transition-time forwards;

@@ -36,21 +36,18 @@
             width: 24px;
             height: 24px;
             border-radius: 50%;
-            background-color: var(--color-primary);
-            color: var(--white);
+            background-color: $color-primary;
+            color: $white;
             font-size: small;
         }
     }
 }
 
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 768px) {
     .fonctionnement {
         height: initial;
         max-width: 100%;
-        padding: 50px 180px;
-        &__title {
-            margin-bottom: 25px;
-        }
+        padding: 48px 60px 68px 60px;
         &__list {
             flex-direction: row;
             gap: 20px;
@@ -61,8 +58,11 @@
         }
     }
 }
-// @media (min-width: 1280px) {
-//     .fonctionnement {
-//         padding: 50px 180px;
-//     }
-// }
+@media screen and (min-width: 1024px) {
+    .fonctionnement {
+        padding: 50px 180px;
+        &__title {
+            margin-bottom: 28px;
+        }
+    }
+}

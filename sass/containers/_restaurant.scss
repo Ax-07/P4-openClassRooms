@@ -1,6 +1,6 @@
 .restaurants {
     padding: 54px 17px 66px 18px ;
-    background-color: var(--color-bg);
+    background-color: $bg-color;
     &__title {
         margin-bottom: 20px;
     }
@@ -13,9 +13,6 @@
 @media screen and (min-width: 768px) {
     .restaurants {
         padding: 30px 60px;
-        &__title {
-            // margin-bottom: 28px;
-        }
         &__container {
             display: grid;
             grid-template-columns: repeat(2, 1fr);

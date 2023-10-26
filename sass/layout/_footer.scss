@@ -3,8 +3,8 @@
     flex-direction: column;
     position: relative;
     padding: 22px 25px;
-    background-color: var(--grey);
-    color: white;
+    background-color: $grey;
+    color: $white;
     &__logo {
         height: 27px;
         margin-bottom: 16px;
@@ -14,9 +14,7 @@
         flex-direction: column;
         width: fit-content;
         gap: 7px;
-        list-style: none;
     }
-    &__item {}
     &__link {
         display: flex;
     }
@@ -34,6 +32,7 @@
         align-items: center;
         width: 190px;
         &--smaller {
+            height: 20px;
             width: 130px
         }
         &::before {
@@ -69,18 +68,16 @@
         gap: 15px;
         padding: 30px 25px;
 
-        
         &__logo {
             margin-bottom: 0;
             width: 138px;
         }
+        
         &__list {
             flex-direction: row;
+            align-items: flex-start;
             gap: 7px;
         }
-        &__item {
-        }
-
     }
 }
     

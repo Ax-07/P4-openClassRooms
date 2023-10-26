@@ -8,7 +8,6 @@
         @include row-flex-center;
         position: absolute;
         z-index: 100;
-        // top: 14px;
         left: 17px;
         width: 30px;
         height: 30px;
@@ -39,13 +38,8 @@
     }
 }
 
-
-
 @media (min-width: $sm-desktop) {
     .header {
-        position: relative;
-        z-index: 1;
-
         &__logo {
             &-wrapper {
                 @include row-flex-center;

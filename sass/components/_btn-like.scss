@@ -1,35 +1,26 @@
 .btn-like {
-  font-size: 22px;
-  line-height: 21px;
-  width: 22px;
-  height: 21px;
-
-    &-checkbox {
+    &__input {
       display: none;
     }
-    &-label {
-      z-index: 20;
+    &__icon {
       border: none;
       background: none;
-  
-      bottom: 33px;
-      right: 25px;  
       cursor: pointer;
     }
-    &-icon::before {
+    &__icon::before {
       font-family: "Font Awesome 6 Free";
       content: "\f004";
+      font-size: 22px;
+      line-height: 21px;
       font-weight: 400;
       display: block;
-      width: var(--icon-size);
-      height: var(--icon-size);
     }
   
-    &-checkbox:checked + &-label .btn-like-icon::before {
+    &__input:checked + &__icon::before {
       animation: scaleUp 0.3s forwards;
       transition: all 1s;
     }
-    &-checkbox:not(:checked) + &-label .btn-like-icon::before {
+    &__input:not(:checked) + &__icon::before {
       animation: scaleDown 0.3s forwards;
     }
   }
@@ -39,7 +30,6 @@
       opacity: 1;
       font-weight: 400;
       color: #000;
-      background-size: 0% 100%;
     }
     75% {
       transform: scale(1.25);
@@ -50,12 +40,7 @@
       opacity: 1;
       font-weight: 900;
       color: transparent;
-      background-size: 50% 100%;
-      background: linear-gradient(
-        180deg,
-        var(--color-primary) 0%,
-        var(--color-secondary) 100%
-      );
+      background: $gradient;
       -webkit-background-clip: text;
       background-clip: text;
     }
