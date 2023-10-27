@@ -31,13 +31,16 @@ $checked-transition-time: 0.175s;
     height: 100%;
 
     border-radius: 15px;
+    cursor: pointer;
   }
 
   &__content {
     @include flex($align: flex-end);
-    flex: 1;
+    // flex basis 100% et flex shrink 0 pour empecher le retrecissement et occuper tout l'espace disponible.
+    // flex: 0 0 100%; 
     transition: flex $checked-transition-time ease;
-
+flex-shrink: 0;
+width: 100%;
     padding: 15px;
     gap: 5px;
 
@@ -80,9 +83,11 @@ $checked-transition-time: 0.175s;
 
   &--checked {
     @include flex($justify: center, $align: center);
-    flex: 0 0 0px; // modifie flex-basis de 0 à 59px pour faire apparaitre le block
+    // flex basis plutot que width pour éviter les problèmes de flex-shrink
+    // flex: 0 0 59px; 
+    flex-shrink: 0;
     transition: flex $checked-transition-time ease;
-
+    width: 59px;
     height: 69px;
 
     border-radius: 0 15px 15px 0;
@@ -102,19 +107,18 @@ $checked-transition-time: 0.175s;
   }
 
   :hover {
-    ~.menu-card--checked {
-      flex-basis: $checked-width;
+    ~.menu-card__content {
+      flex-shrink: 1; // autorise content a se reduire pour laisser la place à checked
     }
   }
 
   :checked {
-    ~.menu-card--checked {
-      flex-basis: $checked-width; // modifie flex-basis de 0 à 59px pour faire apparaitre le block
+    ~.menu-card__content {
+      flex-shrink: 1;
     }
 
     ~.menu-card--checked .menu-card__iconCheck {
       border: 1px solid $color-primary;
-      border-radius: 50%;
     }
   }
 }
