@@ -74,8 +74,8 @@ $checked-transition-time: 0.175s;
     height: 19px;
 
     overflow: hidden;
-    text-overflow: ellipsis;
-    white-space: nowrap;
+    text-overflow: ellipsis; // Empêche le texte de dépasser et affiche des points de suspension
+    white-space: nowrap; // Empêche le texte de passer à la ligne
   }
 
   &--checked {
@@ -110,7 +110,6 @@ $checked-transition-time: 0.175s;
   :checked {
     ~.menu-card--checked {
       flex-basis: $checked-width; // modifie flex-basis de 0 à 59px pour faire apparaitre le block
-      transition: flex $checked-transition-time ease;
     }
 
     ~.menu-card--checked .menu-card__iconCheck {
@@ -144,6 +143,5 @@ $checked-transition-time: 0.175s;
 
   .menu-card {
     max-width: $card-width--lg;
-    transition: all $checked-transition-time ease;
   }
 }

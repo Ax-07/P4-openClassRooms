@@ -907,7 +907,6 @@
 }
 .menu-card :checked ~ .menu-card--checked {
   flex-basis: 59px;
-  transition: flex 0.175s ease;
 }
 .menu-card :checked ~ .menu-card--checked .menu-card__iconCheck {
   border: 1px solid #9356dc;
@@ -1077,7 +1076,6 @@
 @media screen and (min-width: 768px) {
   .menu-card {
     max-width: 634px;
-    transition: all 0.175s ease;
   }
 }
 .btn-like__input {
