@@ -522,9 +522,36 @@
     gap: 50px 100px;
   }
 }
+.menu__banner-img {
+  width: 100%;
+  height: 275px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.menu__wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  gap: 40px;
+  top: -25px;
+}
+.menu__background {
+  position: absolute;
+  top: -30px;
+  max-width: 1055px;
+  width: 100%;
+  height: 1235px;
+  border-radius: 32px 32px 0 0;
+  background-color: #f6f6f6;
+  z-index: 0;
+}
 .menu__header {
   display: flex;
   justify-content: space-between;
+  position: relative;
+  z-index: 1;
   max-width: 341px;
   width: 100%;
   height: 29px;
@@ -573,33 +600,18 @@
     margin: 0;
   }
 }
-.menu__wrapper {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  position: relative;
-  gap: 40px;
-  top: -25px;
-}
-
-.menu__background {
-  position: absolute;
-  top: -30px;
-  max-width: 1055px;
-  width: 100%;
-  height: 1235px;
-  border-radius: 32px 32px 0 0;
-  background-color: #f6f6f6;
-  z-index: 0;
-}
-
-.menu__header {
-  position: relative;
-  z-index: 1;
-}
-
 @media (min-width: 1024px) {
+  .menu__banner {
+    height: 383px;
+    overflow: hidden;
+  }
+  .menu__banner-img {
+    position: relative;
+    z-index: 0;
+    top: -330px;
+    height: initial;
+    max-width: 1440px;
+  }
   .menu__wrapper {
     top: 0;
     padding-top: 11px;
@@ -715,7 +727,7 @@
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
-  align-items: center;
+  align-items: flex-start;
   position: relative;
   z-index: 0;
   height: 251px;
@@ -753,7 +765,7 @@
   width: 80px;
   height: 29px;
   border-radius: 2px;
-  background-color: var(--color-tertiary);
+  background-color: #99e2d0;
 }
 .card__badge--new::before {
   content: "Nouveau";
@@ -801,29 +813,6 @@
   }
   .card__img {
     width: 498.5px;
-  }
-}
-.banner__img {
-  width: 100%;
-  height: 275px;
-  -o-object-fit: cover;
-     object-fit: cover;
-}
-
-@media screen and (min-width: 1024px) {
-  .banner {
-    height: 383px;
-    overflow: hidden;
-  }
-  .banner__img {
-    position: relative;
-    z-index: 0;
-    top: -330px;
-    height: 956px;
-    max-width: 1440px;
-  }
-  .banner__img--note-enchantee {
-    height: initial;
   }
 }
 .menu-card {
