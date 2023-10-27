@@ -896,8 +896,8 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  color: var(--color-tertiary);
-  background-color: white;
+  color: #99e2d0;
+  background-color: #fff;
   border-radius: 50%;
   width: 24px;
   height: 24px;
