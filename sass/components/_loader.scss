@@ -11,9 +11,6 @@
 .overlay {
   @include flex(row, center, center);
   position: relative;
-  z-index: 0;
-  transition: opacity $long-time ease-in-out;
-
   z-index: 200;
 }
 
@@ -34,7 +31,7 @@
     z-index: 0;
     box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.7),
       inset 0px 0px 15px rgba(0, 0, 0, 1);
-    animation: animate $short-time ease-in-out $short-time;
+    animation: circle-rotation $short-time ease-in-out $short-time;
     transition: transform $short-time ease-in-out;
   }
 
@@ -43,7 +40,7 @@
     height: 110px;
     border: 1px solid rgba(0, 0, 0, 0.3);
     box-shadow: 0 0 8px rgba(0, 0, 0, 0.3), inset 0 0 8px rgba(0, 0, 0, 0.4);
-    animation: animate $short-time ease-in-out $short-time;
+    animation: circle-rotation $short-time ease-in-out $short-time;
     transition: transform $short-time ease-in-out;
   }
 
@@ -54,7 +51,7 @@
     box-shadow: 0 0 8px rgba($color-primary, 1),
       inset 0 0 8px rgba($color-primary, 1);
 
-    animation: animate 0.7s ease-in-out $short-time;
+    animation: circle-rotation 0.7s ease-in-out $short-time;
     transition: transform, scale 0.7s ease-in-out;
   }
 
@@ -62,7 +59,7 @@
     border: 4px solid $color-secondary;
     box-shadow: 0 0 8px rgba($color-secondary, 1),
       inset 0 0 8px rgba($color-secondary, 1);
-    animation: animate 0.5s ease-in-out 1s;
+    animation: circle-rotation 0.5s ease-in-out 1s;
     transition: transform, scale 0.5s ease-in-out;
   }
 
@@ -72,7 +69,7 @@
     border: 2px solid $color-tertiary;
     box-shadow: 0 0 8px rgba($color-tertiary, 1),
       inset 0 0 8px rgba($color-tertiary, 1);
-    animation: animate 0.3s ease-in-out 1s;
+    animation: circle-rotation 0.3s ease-in-out 1s;
     transition: transform, scale 0.3s ease-in-out;
   }
 }
@@ -92,12 +89,11 @@
   text-shadow: 0px 4px 15px rgba(0, 0, 0, 0.5),
     0 1px 2px rgba($color-secondary, 0.5), 0 1px 4px rgba($color-primary, 1),
     0 1px 8px rgba($color-tertiary, 1);
-
 }
 
 @for $i from 1 through 8 {
   .letter-#{$i} {
-    animation: fadeIn $time ease-in-out calc($i / 10)+s forwards;
+    animation: fadeIn $time ease-in-out calc($i / 8)+s forwards;
   }
 }
 
