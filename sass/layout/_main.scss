@@ -1,25 +1,10 @@
 .main {
     max-width: 1440px;
     position: relative;
-    transition: all 0.5s;
 }
 
 @media (min-width: $lg-desktop) {
     .main {
         margin: 0 auto;
     }
-}
-
-@media (min-width: $sm-desktop) {
-    .main {
-        &__home {
-            // padding-top: 50px;
-        }
-
-        &__menu {}
-    }
-}
-
-@media (min-width: $tablet) {
-    .main {}
 }

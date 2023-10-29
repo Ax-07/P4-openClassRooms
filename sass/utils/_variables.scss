@@ -4,8 +4,7 @@
 $mobile: 320px; // min-width
 $tablet: 768px; // min-width
 $sm-desktop: 1024px; // min-width
-$desktop: 1280px; // min-width
-$lg-desktop: 1440px; // min-width
+$lg-desktop: 1441px; // min-width
 
 
 /* color */
@@ -19,6 +18,7 @@ $color-primary: #9356dc;
 $color-secondary: #ff79da;
 $color-tertiary: #99e2d0;
 $smooth-white: rgba(0, 0, 0, 0.02);
+
 $gradient: linear-gradient(
   $color-secondary -11.44%,
   $color-primary 123.93%,
