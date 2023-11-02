@@ -30,9 +30,7 @@
     }
 
     &__badge--new {
-        display: flex;
-        align-items: center;
-        justify-content: center;
+        @include flex(row, center, center);
         position: absolute;
         top: 15px;
         right: 15px;

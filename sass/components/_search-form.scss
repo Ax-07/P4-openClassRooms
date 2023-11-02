@@ -1,10 +1,8 @@
 .search-form {
+    @include flex(row, center, center);
     position: absolute;
     top: 63px;
-    z-index: -1;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    z-index: 0;
     transition: height 0.5s;
     overflow: hidden;
     width: 100%;
@@ -50,16 +48,17 @@
             position: relative;
             right: 1px;
         }
+
         &--text {
             display: none;
         }
     }
 }
+
 @media screen and (min-width: 1024px) {
     .search-form {
-        position: absolute;
-        z-index: 1;
         top: 96px;
+
         &__btn {
             display: flex;
         }

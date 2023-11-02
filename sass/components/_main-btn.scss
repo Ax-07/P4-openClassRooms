@@ -1,7 +1,5 @@
 .btn__link {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    @include flex(row, center, center);
     position: relative;
     z-index: 1;
 
