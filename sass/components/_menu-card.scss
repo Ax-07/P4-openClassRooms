@@ -20,6 +20,16 @@ $checked-transition-time: 0.175s;
 
   &__checkbox {
     display: none;
+
+    &:checked {
+      ~.menu-card__content {
+        flex-shrink: 1;
+      }
+  
+      ~.menu-card--checked .menu-card__iconCheck {
+        border: 1px solid $color-primary;
+      }
+    }
   }
 
   &__label {
@@ -32,6 +42,12 @@ $checked-transition-time: 0.175s;
 
     border-radius: 15px;
     cursor: pointer;
+
+    &:hover {
+      ~.menu-card__content {
+        flex-shrink: 1;
+      }
+    }
   }
 
   &__content {
@@ -98,22 +114,6 @@ $checked-transition-time: 0.175s;
     border-radius: 50%;
     width: 24px;
     height: 24px;
-  }
-
-  :hover {
-    ~.menu-card__content {
-      flex-shrink: 1;
-    }
-  }
-
-  :checked {
-    ~.menu-card__content {
-      flex-shrink: 1;
-    }
-
-    ~.menu-card--checked .menu-card__iconCheck {
-      border: 1px solid $color-primary;
-    }
   }
 }
 

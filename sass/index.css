@@ -813,6 +813,12 @@
 .menu-card__checkbox {
   display: none;
 }
+.menu-card__checkbox:checked ~ .menu-card__content {
+  flex-shrink: 1;
+}
+.menu-card__checkbox:checked ~ .menu-card--checked .menu-card__iconCheck {
+  border: 1px solid #9356dc;
+}
 .menu-card__label {
   position: absolute;
   top: 0;
@@ -821,6 +827,9 @@
   height: 100%;
   border-radius: 15px;
   cursor: pointer;
+}
+.menu-card__label:hover ~ .menu-card__content {
+  flex-shrink: 1;
 }
 .menu-card__content {
   display: flex;
@@ -885,15 +894,6 @@
   border-radius: 50%;
   width: 24px;
   height: 24px;
-}
-.menu-card :hover ~ .menu-card__content {
-  flex-shrink: 1;
-}
-.menu-card :checked ~ .menu-card__content {
-  flex-shrink: 1;
-}
-.menu-card :checked ~ .menu-card--checked .menu-card__iconCheck {
-  border: 1px solid #9356dc;
 }
 
 .menu-card--1:nth-of-type(2n+1) {
@@ -1157,7 +1157,7 @@
 }
 .btn__link:active {
   transform: scale(0.97, 0.98);
-  transition: transform 0.01s;
+  transition: scale 0.01s;
 }
 
 @media screen and (min-width: 1024px) {
@@ -1220,13 +1220,13 @@
   border: 2px solid #9356dc;
   box-shadow: 0 0 8px #9356dc, inset 0 0 8px #9356dc;
   animation: circle-rotation 0.7s ease-in-out 1s;
-  transition: transform 0.7s ease-in-out;
+  transition: transform, scale 0.7s ease-in-out;
 }
 .circle-1 {
   border: 4px solid #ff79da;
   box-shadow: 0 0 8px #ff79da, inset 0 0 8px #ff79da;
   animation: circle-rotation 0.5s ease-in-out 1s;
-  transition: transform 0.5s ease-in-out;
+  transition: transform, scale 0.5s ease-in-out;
 }
 .circle-3 {
   width: 170px;
@@ -1234,7 +1234,7 @@
   border: 2px solid #99e2d0;
   box-shadow: 0 0 8px #99e2d0, inset 0 0 8px #99e2d0;
   animation: circle-rotation 0.3s ease-in-out 1s;
-  transition: transform 0.3s ease-in-out;
+  transition: transform, scale 0.3s ease-in-out;
 }
 
 .loader {
