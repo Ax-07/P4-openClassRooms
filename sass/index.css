@@ -817,9 +817,6 @@
 .menu-card__checkbox:checked ~ .menu-card__content {
   flex-shrink: 1;
 }
-.menu-card__checkbox:checked ~ .menu-card--checked .menu-card__iconCheck {
-  border: 1px solid #9356dc;
-}
 .menu-card__label {
   position: absolute;
   top: 0;
