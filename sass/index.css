@@ -87,16 +87,13 @@
 }
 @keyframes circle-rotation {
   0% {
-    transform: rotateY(0deg);
-    scale: 1;
+    transform: rotateY(0deg) scale(1);
   }
   50% {
-    transform: rotateY(180deg);
-    scale: 1.75;
+    transform: rotateY(180deg) scale(1.75);
   }
   100% {
-    transform: rotateY(-360deg);
-    scale: 0.1;
+    transform: rotateY(-360deg) scale(0.1);
   }
 }
 /* mobile */
@@ -1160,7 +1157,7 @@
 }
 .btn__link:active {
   transform: scale(0.97, 0.98);
-  transition: scale 0.01s;
+  transition: transform 0.01s;
 }
 
 @media screen and (min-width: 1024px) {
@@ -1223,13 +1220,13 @@
   border: 2px solid #9356dc;
   box-shadow: 0 0 8px #9356dc, inset 0 0 8px #9356dc;
   animation: circle-rotation 0.7s ease-in-out 1s;
-  transition: transform, scale 0.7s ease-in-out;
+  transition: transform 0.7s ease-in-out;
 }
 .circle-1 {
   border: 4px solid #ff79da;
   box-shadow: 0 0 8px #ff79da, inset 0 0 8px #ff79da;
   animation: circle-rotation 0.5s ease-in-out 1s;
-  transition: transform, scale 0.5s ease-in-out;
+  transition: transform 0.5s ease-in-out;
 }
 .circle-3 {
   width: 170px;
@@ -1237,7 +1234,7 @@
   border: 2px solid #99e2d0;
   box-shadow: 0 0 8px #99e2d0, inset 0 0 8px #99e2d0;
   animation: circle-rotation 0.3s ease-in-out 1s;
-  transition: transform, scale 0.3s ease-in-out;
+  transition: transform 0.3s ease-in-out;
 }
 
 .loader {
