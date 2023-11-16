@@ -829,9 +829,6 @@
   border-radius: 15px;
   cursor: pointer;
 }
-.menu-card__label:hover ~ .menu-card__content {
-  flex-shrink: 1;
-}
 .menu-card__content {
   display: flex;
   flex-direction: row;
@@ -1060,6 +1057,11 @@
 @media screen and (min-width: 768px) {
   .menu-card {
     max-width: 634px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .menu-card__label:hover ~ .menu-card__content {
+    flex-shrink: 1;
   }
 }
 .btn-like__input {

@@ -43,11 +43,7 @@ $checked-transition-time: 0.175s;
     border-radius: 15px;
     cursor: pointer;
 
-    &:hover {
-      ~.menu-card__content {
-        flex-shrink: 1;
-      }
-    }
+
   }
 
   &__content {
@@ -141,5 +137,15 @@ $checked-transition-time: 0.175s;
 
   .menu-card {
     max-width: $card-width--lg;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .menu-card {
+    &__label:hover {
+      ~.menu-card__content {
+        flex-shrink: 1;
+      }
+    }
   }
 }
